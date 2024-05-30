@@ -102,7 +102,16 @@ body {
 .job {
   margin-top: 10px;
   margin-left: 10px;
+  font-size: 25px;
+  -webkit-text-fill-color: rgb(0, 0, 0);
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #ffffff;
+  white-space: nowrap; /* Ensure text doesn't wrap */
+  overflow: hidden; /* Hide the overflowing text */
 }
+
+
+
 
 .job span {
   font-size: 25px;

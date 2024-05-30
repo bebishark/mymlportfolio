@@ -55,3 +55,22 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function () {
   modal.style.display = "none";
 };
+
+// TYPING LETTTERS SCRIPT
+document.addEventListener("DOMContentLoaded", function () {
+  const text = "Gamer | Web Designer";
+  const jobElement = document.getElementById("job");
+  let index = 0;
+
+  function type() {
+    if (index < text.length) {
+      jobElement.textContent += text.charAt(index);
+      index++;
+      setTimeout(type, 100); // Adjust the speed of typing (milliseconds)
+    }
+  }
+
+  jobElement.textContent = ''; // Clear initial content
+  type(); // Start the typing effect
+});
+
