@@ -43,7 +43,8 @@ body {
   border-radius: 20px;
   width: 90%;
   opacity: 0.9;
-  animation: colorChange 5s infinite alternate; /* Adjust the duration (5s) as needed */
+  animation: colorChange 5s infinite alternate;
+  /* Adjust the duration (5s) as needed */
   -moz-box-shadow: 0px 0px 15px 0px var(--blueDark) !important;
   -webkit-box-shadow: 0px 0px 15px 0px var(--blueDark) !important;
   box-shadow: 0px 0px 15px 0px var(--blueDark) !important;
@@ -51,13 +52,18 @@ body {
 
 @keyframes colorChange {
   0% {
-    border-color: rgb(204, 255, 51); /* Initial color (bright green) */
+    border-color: rgb(204, 255, 51);
+    /* Initial color (bright green) */
   }
+
   50% {
-    border-color: rgb(255, 255, 255); /* Middle color (white) */
+    border-color: rgb(255, 255, 255);
+    /* Middle color (white) */
   }
+
   100% {
-    border-color: rgb(51, 51, 255); /* Final color (bright blue) */
+    border-color: rgb(51, 51, 255);
+    /* Final color (bright blue) */
   }
 }
 
@@ -80,17 +86,20 @@ body {
   position: relative;
   display: inline-block;
 }
+
 .divider span {
   background-color: var(--blueLight) !important;
   position: absolute;
   border-radius: 2px;
 }
+
 .divider span:nth-child(1) {
   width: 500%;
   height: 6px;
   top: 10px;
   left: 0px;
 }
+
 .divider span:nth-child(2) {
   width: 500%;
   height: 6px;
@@ -106,12 +115,11 @@ body {
   -webkit-text-fill-color: rgb(0, 0, 0);
   -webkit-text-stroke: 1px;
   -webkit-text-stroke-color: #ffffff;
-  white-space: nowrap; /* Ensure text doesn't wrap */
-  overflow: hidden; /* Hide the overflowing text */
+  white-space: nowrap;
+  /* Ensure text doesn't wrap */
+  overflow: hidden;
+  /* Hide the overflowing text */
 }
-
-
-
 
 .job span {
   font-size: 25px;
@@ -127,7 +135,12 @@ body {
   color: var(--blueLight);
   line-height: 60px;
 }
+
 .bouncing-arrow {
+  font-weight: bold;
+  text-align: center;
+  text-shadow: #0073ff;
+  font-size: 15px;
   margin-top: 50px;
   animation: 2s ease 0s normal none infinite running bounce;
   bottom: 17px;
@@ -135,10 +148,14 @@ body {
   left: 50%;
   width: 60px;
 }
+
 .bouncing-arrow a {
+  color: #1f2833;
   text-decoration: none;
 }
+
 @keyframes bounce {
+
   0%,
   20%,
   50%,
@@ -146,13 +163,16 @@ body {
   100% {
     transform: translateY(0);
   }
+
   40% {
     transform: translateY(-30px);
   }
+
   60% {
     transform: translateY(-15px);
   }
 }
+
 .bounce {
   animation-name: bounce;
 }
@@ -192,6 +212,7 @@ body {
     display: none;
   }
 }
+
 @media only screen and (min-width: 810px) {
   .mobile {
     display: none;
