@@ -1,6 +1,6 @@
 # Erica Joy Mejia's Portfolio
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/38eabdcb-817d-4d48-be40-e37833f93340/deploy-status)](https://app.netlify.com/sites/ericajoyportfolio/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/166241af-e6df-4495-a19d-aa9e81de993f/deploy-status)](https://app.netlify.com/sites/ericajoyportfolio/deploys)
 
 Welcome to my portfolio! This project showcases my skills and projects using the following technologies:
 
