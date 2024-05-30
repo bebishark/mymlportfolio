@@ -1,0 +1,190 @@
+@import url(header.css);
+@import url(about.css);
+@import url(modalAnimation.css);
+@import url(portfolio.css);
+@import url(contact.css);
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap&family=Readex+Pro&display=swap&family=Open+Sans:wght@400;600&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* Colors */
+  --white: #ffffff;
+  --primary: #011049;
+  --secondary: #1f2833;
+  --grey: #c5c6c7;
+  --blueLight: #66fcf1;
+  --blueDark: #45a29e;
+
+  /* fonts */
+  --comic: "Comic Neue";
+  --readex: "Readex Pro";
+  --open-sans: "Open Sans";
+}
+
+body {
+  color: var(--white);
+}
+
+#hero {
+  background-image: url(../img/hanabi\ wallpaper.jpg);
+  background-size: cover;
+}
+
+#top {
+  padding-top: 8.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.img-thumb img {
+  border-style: dashed;
+  border-radius: 20px;
+  width: 90%;
+  opacity: 0.9;
+  animation: colorChange 5s infinite alternate; /* Adjust the duration (5s) as needed */
+  -moz-box-shadow: 0px 0px 15px 0px var(--blueDark) !important;
+  -webkit-box-shadow: 0px 0px 15px 0px var(--blueDark) !important;
+  box-shadow: 0px 0px 15px 0px var(--blueDark) !important;
+}
+
+@keyframes colorChange {
+  0% {
+    border-color: rgb(204, 255, 51); /* Initial color (bright green) */
+  }
+  50% {
+    border-color: rgb(255, 255, 255); /* Middle color (white) */
+  }
+  100% {
+    border-color: rgb(51, 51, 255); /* Final color (bright blue) */
+  }
+}
+
+
+.my-name span {
+  font-size: 100px;
+  font-weight: 700;
+  font-family: var(--open-sans);
+  line-height: 115px;
+  text-decoration-style: dashed;
+  color: #1f2833e5;
+  -webkit-text-stroke: 1px var(--grey);
+}
+
+/* divider */
+.divider {
+  width: 35px;
+  height: 30px;
+  margin: 10px 10px;
+  position: relative;
+  display: inline-block;
+}
+.divider span {
+  background-color: var(--blueLight) !important;
+  position: absolute;
+  border-radius: 2px;
+}
+.divider span:nth-child(1) {
+  width: 500%;
+  height: 6px;
+  top: 10px;
+  left: 0px;
+}
+.divider span:nth-child(2) {
+  width: 500%;
+  height: 6px;
+  top: 30px;
+  left: 70px;
+}
+
+/* Job */
+.job {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.job span {
+  font-size: 25px;
+  word-spacing: 5px;
+  font-family: var(--comic);
+  color: var(--blueDark);
+}
+
+/* Arrow Bounce */
+.fas {
+  font-size: 4rem;
+  display: block;
+  color: var(--blueLight);
+  line-height: 60px;
+}
+.bouncing-arrow {
+  margin-top: 50px;
+  animation: 2s ease 0s normal none infinite running bounce;
+  bottom: 17px;
+  height: 44px;
+  left: 50%;
+  width: 60px;
+}
+.bouncing-arrow a {
+  text-decoration: none;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.bounce {
+  animation-name: bounce;
+}
+
+.primary {
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--primary);
+  transition: transform 0.5s;
+  -moz-box-shadow: 0px 0px 23px 0px var(--blueLight) !important;
+  -webkit-box-shadow: 0px 0px 23px 0px var(--blueLight) !important;
+  box-shadow: 0px 0px 23px 0px var(--blueLight) !important;
+}
+
+.primary:hover {
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--primary);
+  transform: scale(1.1);
+  -moz-box-shadow: 0px 0px 23px 0px var(--blueLight) !important;
+  -webkit-box-shadow: 0px 0px 23px 0px var(--blueLight) !important;
+  box-shadow: 0px 0px 23px 0px var(--blueLight) !important;
+}
+
+#footer {
+  padding: 1rem;
+  background-color: var(--primary);
+}
+
+#footer .title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 810px) {
+  #onlyDesktop {
+    display: none;
+  }
+}
+@media only screen and (min-width: 810px) {
+  .mobile {
+    display: none;
+  }
+}
